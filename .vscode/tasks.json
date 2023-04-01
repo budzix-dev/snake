@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Build with GCC 12",
+      "command": "C:\\mingw64\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-std=c++20",
+        "-g",
+        "${workspaceFolder}\\*.cpp",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build",
+      "detail": "compiler: C:\\mingw64\\bin\\g++.exe"
+    },
+    {
+      "type": "cppbuild",
+      "label": "Build with clang++",
+      "command": "C:\\mingw64\\bin\\clang++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-std=c++20",
+        "-g",
+        "${workspaceFolder}\\*.cpp",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build",
+      "detail": "compiler: C:\\mingw64\\bin\\clang++.exe"
+    }
+  ]
+}
